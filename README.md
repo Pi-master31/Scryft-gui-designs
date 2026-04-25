@@ -1,2 +1,2 @@
-# Scryft-gui
-Editor for scryft projects, made from scratch. (Heh get it)
+# Editor
+Welcome to the Scryft editor. Please note that it is currently a work in progress.
