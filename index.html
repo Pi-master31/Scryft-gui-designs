@@ -23,7 +23,7 @@
         }
         
         .navbar {
-            background-color: white;
+            background-color: #FFD700;
             border-bottom: 1px solid #e0e0e0;
             padding: 0 20px;
             display: flex;
@@ -72,8 +72,14 @@
             transition: color 0.3s;
         }
         
-        .nav-links a:hover {
+        .nav-links a:hover:not(.disabled) {
             color: #0066cc;
+        }
+        
+        .nav-links a.disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            pointer-events: none;
         }
         
         .nav-right {
@@ -126,7 +132,7 @@
                 </a>
                 <ul class="nav-links">
                     <li><a href="#" class="active">Create</a></li>
-                    <li><a href="https://scryft.github.io" class="disabled">About</a></li>
+                    <li><a href="#" class="disabled">About</a></li>
                     <li><a href="#" class="disabled">Docs</a></li>
                 </ul>
             </div>
