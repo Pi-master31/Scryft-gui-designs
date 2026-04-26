@@ -1797,6 +1797,25 @@
         , mutator: "controls_if_mutator"
         , extensions: ["controls_if_tooltip"]
       }, {
+        type: "controls_while"
+        , message0: "while %1"
+        , args0: [{
+          type: "input_value"
+          , name: "IF0"
+          , check: "Boolean"
+        }]
+        , message1: "%{BKY_CONTROLS_IF_MSG_THEN} %1"
+        , args1: [{
+          type: "input_statement"
+          , name: "DO0"
+        }]
+        , previousStatement: null
+        , nextStatement: null
+        , style: "logic_blocks"
+        , helpUrl: "Performs a loop until the boolean becomes false."
+        , suppressPrefixSuffix: !0
+        , mutator: "controls_while_mutator"
+      }, {
         type: "controls_ifelse"
         , message0: "%{BKY_CONTROLS_IF_MSG_IF} %1"
         , args0: [{
